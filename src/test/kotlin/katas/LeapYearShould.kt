@@ -15,4 +15,11 @@ class LeapYearShould {
         assertThat(isLeapYear, `is`(true))
     }
 
+    @Test
+    fun return_false_for_a_common_year() {
+        val isLeapYear = leapYear.isLeapYear(2001)
+
+        assertThat(isLeapYear, `is`(false))
+    }
+
 }
